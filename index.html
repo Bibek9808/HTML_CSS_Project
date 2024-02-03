@@ -3,59 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musician & Programmer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Cartoonish Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive; /* Change the font to something more playful */
+            background-color: #F8F8FF; /* Light lavender background */
+        }
+
+        header {
+            background-color: #2f2f2f; /* Pink header background */
+            color: white;
+            text-align: center;
+            padding: 1em;
+            border-bottom: 5px solid #5b5b5b; /* Darker pink border */
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 55vh;
+            overflow: hidden;
+            position: relative;
+            background-color: #87CEFA; /* Light sky blue section background */
+        }
+
+        .content {
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: #FF1493; /* Dark pink heading */
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #4169E1; /* Royal blue text */
+        }
+
+        /* Cartoonish character */
+        .cartoon-character {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+        }
+
+        /* Playful icons */
+        .icons {
+            margin-top: 20px;
+        }
+
+        .icon {
+            font-size: 2em;
+            margin: 0 10px;
+            color: #FFD700; /* Gold icon color */
+        }
+
+        /* Skills section */
+        .skills {
+            text-align: center;
+            background-color: #FFDAB9; /* Peachpuff background */
+            padding: 2em;
+        }
+
+        .skills h2 {
+            color: #FF4500; /* Orange heading color */
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-item {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background-color: #FFA07A; /* Light salmon skill item background */
+            border-radius: 5px;
+        }
+
+        .skill-item span {
+            font-weight: bold;
+            color: #8B0000; /* Dark red skill text color */
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <h1>Musician & Programmer Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#music">Music</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Bibek Shrestha</h1>
+        <p>Full Stack Web Developer</p>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate musician and programmer, combining my love for music with my skills in programming to create unique experiences.</p>
+    <section>
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Feel Free to email me anytime</p>
+            <div class="contact-button">
+                <a href="contact.html">Contact Me</a>
+            </div>
+
+            <!-- Playful icons -->
+            <div class="icons">
+                <span class="icon">🌟</span>
+                <span class="icon">🎨</span>
+                <span class="icon">🚀</span>
+                <span class="icon">🎉</span>
+            </div>
         </div>
     </section>
 
-    <section id="music">
-        <div class="container">
-            <h2>My Music</h2>
-            <p>Here you can find some of my latest tracks:</p>
-            <!-- Add your music tracks or embeds here -->
-        </div>
-    </section>
+    <!-- Skills section -->
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li class="skill-item"><span>.NET</span></li>
+            <li class="skill-item"><span>Python</span></li>
+            <li class="skill-item"><span>HTML</span></li>
+            <li class="skill-item"><span>CSS</span></li>
+            <li class="skill-item"><span>MYSQL</span></li>
+            <li class="skill-item"><span>Flutter</span></li>
+        </ul>
+    </div>
 
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <p>Check out some of my programming projects:</p>
-            <!-- Add links or descriptions to your projects here -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me:</p>
-            <!-- Add your contact information here -->
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Musician & Programmer Portfolio</p>
-        </div>
-    </footer>
 </body>
 </html>
